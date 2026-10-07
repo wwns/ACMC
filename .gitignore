@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+*.log
+*.db
+*.sqlite3
+*.sqlite

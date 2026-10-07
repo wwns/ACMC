@@ -1,0 +1,1100 @@
+ 
+ 
+ 
+INSTRUKCJA INSTALACJI 
+ 
+Produkt:  Bramka komunikacyjna  
+AC Mobile Control (ACMC) 
+dla klimatyzatorów LG Electronics 
+ 
+ 
+P/N: SYNG1030HA 
+ SYNG1030BMS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+UWAGA  
+• Przed instalacj ą wyrobu nale ży dokładnie przeczyta ć cał ą 
+instrukcj ę. 
+• Prace instalacyjne musz ą by ć wykonane zgodnie  
+z pa ństwowymi przepisami elektrycznymi wył ącznie przez 
+osoby upowa żnione. 
+• Po przeczytaniu instrukcji instalacji nale ży j ą zachowa ć do 
+wykorzystania w przyszło ści. 
+
+
+----PAGE----
+
+ 
+2   Bramka komunikacyjna (ACMC)  
+SPIS TRE ŚCI 
+ 
+Ostrze żenia dotycz ące bezpiecze ństwa 
+ .................................................. ............ 3 
+Przegl ąd ............................................... 5 
+Sposób instalacji ................................. 7 
+Schemat okablowania ......................... 8 
+Ustawienia PI-485 .............................. 11 
+Ustawienia adresu jednostki 
+wewn ętrznej ....................................... 12  
+Konfiguracja  bramki ......................... 14  
+Aplikacja AC Mobile Control* ............ 19  
+Integracja z BMS** ............................. 20 
+Szkielet mapy rejestrów Modbus** ... 24  
+ 
+DANE URZ ĄDZENIA 
+Tutaj nale ży zapisa ć numer modelu i numer seryjny: 
+ 
+Nazwa modelu _____________/__________________ 
+ (model ACMC /podpi ęta  jednostka zewn ętrzna)  
+ 
+Nr seryjny _____________________________ 
+ (numer seryjny bramki ACMC – tzw. Serial No.)  
+Znajduj ą si ę one na etykiecie umieszczonej z boku obu- 
+dowy ka żdego urz ądzenia. 
+ 
+ 
+ 
+Nazwa sprzedawcy ___________________________ 
+ 
+Kontakt _____________________________________ 
+ 
+Data zakupu _________________________________ 
+ 
+ Do tej strony nale ży przypi ąć  paragon kasowy. Sta- 
+nowi on potwierdzenie daty zakupu na wypadek ko- 
+rzystania z gwarancji. 
+ 
+ 
+PRZECZYTAJ INSTRUKCJ Ę  
+Wewn ątrz znajduje si ę wiele przydatnych wskazówek 
+dotycz ących tego, jak wła ściwie u żytkowa ć i dba ć 
+o urz ądzenie. Troch ę czynno ści zapobiegawczych 
+z Pa ństwa strony mo że przynie ść  du żą  oszcz ędno ść  
+czasu i pieni ędzy w czasie u żytkowania tego systemu. 
+W cz ęś ci dotycz ącej rozwi ązywania problemów znajduje 
+si ę wiele odpowiedzi na cz ęsto powstaj ące w ątpliwo ści. 
+Je żeli najpierw przeczytaj ą Pa ństwo rozdział Porady 
+dotycz ące rozwi ązywania problemów , to mo że 
+w ogóle nie b ędzie potrzeby wzywania serwisu. 
+
+----PAGE----
+
+Ostrze żenia dotycz ące bezpiecze ństwa  
+Instrukcja instalacji   3 
+Ostrze żenia dotycz ące bezpiecze ństwa 
+Aby zapobiec okaleczeniu u żytkownika lub innych osób oraz uszkodzeniu innych przedmiotów, nale ży 
+post ępowa ć zgodnie z poni ższymi wskazówkami. 
+ Nieprawidłowe działanie z powodu lekcewa żenia instrukcji mo że spowodowa ć okaleczenia lub 
+uszkodzenia, których waga jest klasyfikowana poprzez oznaczenie nast ępuj ącymi znakami.  
+ OSTRZE ŻENIE  
+Oznaczenie to wskazuje na mo żliwo ść  spowodowania śmierci 
+lub powa żnego okaleczenia. 
+ UWAGA  Oznaczenie to wskazuje na mo żliwo ść  spowodowania uszko- 
+dzenia lub zniszczenia jedynie przedmiotów. 
+ Znaczenia symboli u żywanych w instrukcji przedstawione s ą poni żej. 
+ Tego nie wolno robi ć 
+ To trzeba koniecznie wykona ć 
+OSTRZE ŻENIE 
+ Instalacja 
+Nie dotyka ć r ękoma, gdy po d- 
+łączone jest zasilanie. 
+ 
+ 
+• Istnieje niebezpiecze ństwo 
+po żaru lub pora żenia pr ądem 
+elektrycznym. 
+ 
+ 
+ 
+Używa ć tylko cz ęś ci znormal i- 
+zowanych (zł ącza). 
+ 
+ 
+• Nie demontowa ć ani napra- 
+wia ć wyrobu. Istnieje niebez- 
+piecze ństwo po żaru lub pora- 
+żenia pr ądem elektrycznym. 
+ 
+ 
+ 
+ 
+W sprawie prac elektrycznych 
+zwróci ć si ę do sprzedawcy, 
+wykwalifikowanego elektryka 
+lub autoryzowanego punktu 
+serwisowego. 
+• Nie demontowa ć ani napra- 
+wia ć wyrobu. Istnieje niebez- 
+piecze ństwo po żaru lub pora- 
+żenia pr ądem elektrycznym. 
+ 
+ 
+  
+
+
+----PAGE----
+
+Ostrze żenia dotycz ące bezpiecze ństwa  
+4   Bramka komunikacyjna (ACMC)  
+Używa ć wył ączników i be z- 
+pieczników o prawidłowych 
+warto ściach znamionowych. 
+ 
+ 
+• Istnieje niebezpiecze ństwo 
+po żaru lub pora żenia pr ą-
+dem elektrycznym. 
+ 
+ 
+ 
+Nie wolno samowolnie 
+(przez klienta) instalowa ć, 
+demontowa ć ani przeinsta- 
+lowywa ć wyrobu. 
+ 
+• Istnieje niebezpiecze ństwo 
+po żaru, pora żenia pr ądem 
+elektrycznym, eksplozji lub 
+zranienia. 
+ 
+ 
+W sprawie instalacji zawsze nale ży 
+kontaktowa ć si ę ze sprzedawc ą  
+lub autoryzowanym punktem ser- 
+wisowym. 
+ 
+• Istnieje niebezpiecze ństwo po żaru, 
+pora żenia pr ądem elektrycznym, 
+eksplozji lub zranienia. 
+ 
+ 
+ Użytkowanie 
+ 
+Je śli wyrób zostanie zamoczony (zalany lub 
+zanurzony) skontaktowa ć si ę z autoryzowa- 
+nym punktem serwisowym. 
+• Istnieje niebezpiecze ństwo po żaru lub pora że- 
+nia pr ądem elektrycznym. 
+ 
+ 
+ 
+Nale ży zachowa ć ostro żno ść , aby woda nie 
+dostała si ę do wn ętrza wyrobu. 
+ 
+• Istnieje niebezpiecze ństwo po żaru, pora żenia 
+pr ądem elektrycznym lub uszkodzenia wyrobu. 
+ 
+ 
+
+
+----PAGE----
+
+Przegl ąd 
+Instrukcja instalacji   5 
+Przegl ąd 
+ 
+ Funkcje 
+• kontrola do 20* (lub 250**) jednostek wewn ętrznych 
+• zmiana trybów pracy klimatyzatora: Chłodzenie / Wentylacja / Osuszanie / Grzanie / Praca Au- 
+tomatyczna 
+• zmiana intensywno ści nawiewu: Auto / Niski / Średni / Wysoki / B. Wysoki / Power 
+• zadawanie temperatury 
+• odczyt temperatury aktualnej 
+• wł ączenie/wył ączenie opcji Swing (falowanie) 
+• wł ączenie/wył ączenie plazmowego oczyszczania powietrza 
+• wł ączenie/wył ączenie klimatyzatora 
+• ustawianie harmonogramów dla klimatyzatorów (do 4 dla ka żdej jednostki wewn ętrznej)* 
+• wł ączenie/wył ączenie blokady sterowania lokalnego** 
+• współpraca z aplikacj ą: AC Mobile Control* 
+ 
+ 
+ 
+Dane techniczne 
+• Zasilanie: 9 ÷ 30 V DC 
+• Wymiary (sz. x wys. x gł.): 110 x 135 x 70 [mm]  
+• Podł ączone jednostki: wiele systemów (w systemie max. 20  jednostek wewn ętrznych dla wersji 
+HA i 250 jednostek dla wersji BMS)  
+• Interfejs sieciowy: 10/100BaseT auto-MDIX Ethernet (Modbus TCP**) 
+• Monta ż w miejscu nienara żonym na bezpo średnie działanie czynników atmosferycznych 
+ 
+*dotyczy modelu SYNG1030HA 
+**dotyczy modelu SYNG1030BMS 
+  
+
+
+----PAGE----
+
+Przegl ąd 
+6   Bramka komunikacyjna (ACMC)  
+ Cz ęś ci bramki ACMC 
+ 
+ 
+ 
+ 
+1. Zł ącze zasilania (9 ÷ 30 V DC) 
+2. Zł ącze komunikacyjne do płytki PI-485 jednostki zewn ętrznej 
+(BUS-A, BUS-B) 
+3. Zł ącze komunikacyjne RJ45 (Ethetnet) 
+4. Przeł ącznik terminacji magistrali podł ączonej do PI-485 
+5. Przycisk resetu / przywrócenia ustawie ń fabrycznych 
+Reset – short press; ustawienia fabryczne – przytrz ymanie 
+przez ponad 10 sekund 
+6. Wska źniki LED obecno ści napi ęć  zasilaj ących 
+7. Wska źniki LED komunikacji z płytk ą PI-485 (nadawanie do 
+systemu klimatyzacji) 
+8. Wska źniki LED komunikacji z płytk ą PI-485 (odbieranie z sys- 
+temu klimatyzacji) 
+9. Wska źnik LED bł ędów urz ądzenia lub komunikacji 
+10. Wska źnik LED statusu sieci Ethernet 
+11. Bateria typu CR2032 do podtrzymania wbudowanego zegara* 
+ 
+ 
+ 
+*dotyczy modelu SYNG1030HA 
+
+
+----PAGE----
+
+Sposób instalacji  
+Instrukcja instalacji   7 
+ 
+Sposób instalacji 
+ 
+ Kolejno ść  instalacji 
+ 
+1. Wył ączy ć zasilanie je śli jest ono wł ączone. 
+2. Podł ączy ć płytk ę PI-485 do jednostki zewn ętrznej (patrz instrukcja do płytki PI-485). 
+3. Skonfigurowa ć płytk ę PI-485 do pracy z bramk ą (opis w dalszej cz ęś ci tej instrukcji). 
+4. Podł ączy ć interfejs komunikacyjny ACMC z płytk ą PI-485: LG-A z BUS_A(+) oraz LG-B z 
+BUS_B(-). 
+5. Podł ączy ć zasilanie ACMC z płytki PI-485: PWR- z GND oraz PWR+ z +10V lub z zewn ętrzne- 
+go zasilacza. 
+6. Podł ączyć ACMC do sieci lokalnej (LAN) za pomoc ą portu Ethernet (RJ45). 
+7. Wł ączyć zasilanie. 
+8. Skonfigurowa ć adresy jednostek wewn ętrznych (opis w dalszej cz ęś ci tej instrukcji). 
+9. Skonfigurowa ć  bramk ę ACMC (opis w dalszej cz ęś ci tej instrukcji). 
+10. Skonfigurowa ć aplikacj ę AC Mobile Control* (opis w pomocy Aplikacji) lub skomunikować bam- 
+kę z systemem BMS** (w ramach prac integratora/wykonawcy systemu BMS). 
+ 
+ 
+ System sterowania współpracuj ący z bramk ą 
+ 
+Bramka AC Mobile Control, w zale żno ści od wersji i zastosowania mo że współpracowa ć z: 
+ 
+• Systemem Zarz ądzania Budynkiem (BMS) lub systemem automatyki budynkowej 
+Bramka musi zosta ć podł ączona do tej samej sieci LAN, w której znajduje si ę obsługuj ące j ą 
+urz ądzenie nadrz ędne (sterownik PLC, komputer PC, panel operatorski itp.) 
+ 
+• Prostym domowym systemem zdalnego, centralnego sterowania klimatyzacj ą 
+Rol ę urz ądzenia steruj ącego pełni smartfon lub tablet z zainstalowan ą aplikacj ą AC Mobile Con- 
+trol. 
+Bramka musi zosta ć podł ączona do domowej sieci LAN, w której znajduje si ę router i do której 
+jest podł ączony smartfon/tablet z zainstalowan ą aplikacj ą AC Mobile Control. 
+ 
+ 
+ 
+*dotyczy modelu SYNG1030HA 
+ **dotyczy modelu SYNG1030BMS 
+
+----PAGE----
+
+Schemat okablowania  
+8   Bramka komunikacyjna (ACMC)  
+Schemat okablowania 
+ Niezale żne działanie ACMC 
+Podł ączy ć urz ądzenie zgodnie z poni ższym schematem. 
+1. System MULTI V* 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2. Klimatyzatory pokojowe*, komercyjne Split oraz Multi, wyposa żone  
+w płytk ę PI-485 (PMNFP14A0) 
+ 
+ UWAGA : Korzystanie z bramki ACMC wymaga instalacji płytki PI-485 (PMNFP14A0), który należy 
+zakupić oddzielnie. Jedynie systemy MULTI V II i wyższej generacji posiadają wbudowa- 
+ną płytkę PI-485 (nie dotyczy modelu ARUN40GS2A, gd zie płytkę należy zakupić od- 
+dzielnie).  
+ 
+* systemy MULTI V Serii II i nowsze maj ą fabrycznie wbudowan ą płytk ę PI-485.  
+BUS-A 
+BUS-B 
+PWR + 
+PWR - 
+RS-485, przewód ekranowany 4x0,75 mm 
+2 
+Jednostka zewnętrzna  
+z opcjonalną płytką PI-485 
+ 
+Jednostka zewnętrzna  
+Systemu MULTI V 
+ 
+
+----PAGE----
+
+Schemat okablowania  
+Instrukcja instalacji   9 
+Praca z centralnym sterowaniem (AC Smart lub AC Manager) 
+ 
+ 
+ 
+ 
+ 
+ 
+ UWAGA: Korzystanie z bramki ACMC wymaga instalacji płytk i PI-485 (PMNFP14A0), który nale ży 
+zakupi ć oddzielnie. Jedynie systemy MULTI V II i wy ższej generacji posiadaj ą wbudo- 
+wan ą płytk ę PI-485 (nie dotyczy modelu ARUN40GS2A, gdzie płytk ę nale ży zakupi ć 
+oddzielnie). 
+ 
+ 
+ 
+
+
+----PAGE----
+
+Schemat okablowania  
+10    Bramka komunikacyjna (ACMC)  
+ Podł ączenie bramki do płytki PI-485 
+ 
+ 
+ 
+ 
+ 
+ 
+ UWAGA :  
+ Na schemacie pomini ęto podł ączenie lokalnej sieci (LAN) 
+
+
+----PAGE----
+
+Ustawienia PI-485  
+Instrukcja instalacji   11 
+Ustawienia PI-485 
+ 
+ 
+ 
+Konfiguracja zworek na płycie PI-485 w zależności od produktu: 
+ 
+ 
+ 
+1 i 4 ON, reszta OFF  
+− systemy MULTI V Plus (bez generacji nowszych od MU LTI V II    
+oraz modeli CRUN) 
+− systemy Multi Split Inverter 
+ 
+ 
+ 
+3 i 4 ON, reszta OFF 
+− systemy typu Split Komercyjne i Pokojowe 
+− centrale rekuperacyjne ecoV (płytka PHNFP14A0) 
+ 
+ 
+ 
+ UWAGA 
+Nieprawidłowe ustawienie przeł ącznika mo że spowodowa ć nieprawidłowe działanie. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+* - wył ącznie produkty które pozwalaj ą na monta ż płytki PI-485. 
+zawsze  
+na „ON” 
+
+----PAGE----
+
+Ustawienia adresu jednostki wewn ętrznej  
+12    Bramka komunikacyjna (ACMC)  
+Ustawienia adresu jednostki wewn ętrznej 
+ 
+ Użycie przewodowego zdalnego sterownika 
+1.  W celu wej ścia w tryb ustawie ń instalacyjnych nacisn ąć  
+na 3 sekundy przycisk .  
+Je śli przycisk postanie wci śni ęty zbyt krótko, nast ąpi wej ście 
+w tryb ustawie ń u żytkownika. Nale ży zwróci ć uwag ę, aby 
+naci śni ęcie trwało dłu żej ni ż 3 sekundy. 
+1. Za pomoc ą przycisku  wej ść  w tryb ustawiania adresu - 
+widoczne b ędzie poni ższe wskazanie. 
+ 
+2. Naciskaj ąc przyciski  ustawi ć numer grupy (0~F). 
+ 
+3. Nacisn ąć  przycisk , aby  wybra ć pole numeru jed- 
+nostki wewn ętrznej. 
+ 
+4. Naciskaj ąc przyciski  ustawi ć numer jednostki we- 
+wn ętrznej (0~F). 
+ 
+5. Nacisn ąć  przycisk , aby zapami ęta ć usta- 
+wienia. Przy wyj ściu bez bez zatwierdzenia 
+nastawione warto ść  nie zostanie zapami ętana. 
+ 
+6. Nacisn ąć  przycisk , aby wyj ść  z trybu ustawie ń. 
+ Je śli w ci ągu 25 sekund nie zostanie naci śni ęty żaden 
+przycisk, system automatycznie opu ści ustawienia 
+instalacyjne.  
+ 
+ 
+
+
+----PAGE----
+
+Ustawienia adresu jednostki wewn ętrznej  
+Instrukcja instalacji   13 
+ Użycie bezprzewodowego zdalnego sterownika 
+ Nadanie adresu jednostkom wewn ętrznym: 
+ 
+1. Trzymaj ąc wci śni ęty przycisk MODE, nacisn ąć  przycisk 
+RESET. 
+ 
+2. Przy u życiu przycisków ustawiania temperatury TEMP, usta- 
+wi ć adres jednostki wewn ętrznej. Zakres ustawiania: 00 ~ FF 
+ 
+3. Po ustawieniu adresu, kieruj ąc sterownik w stron ę jednostki 
+wewn ętrznej, nacisn ąć  1 raz przycisk ON/OFF. 
+ 
+4. Na jednostce wewn ętrznej zostanie wy świetlony ustawiony 
+adres. Ustawianie adresu jest zako ńczone.  
+- Czas i sposób wy świetlania adresu mo że ró żni ć si ę w zale ż-
+no ści od typu jednostki wewn ętrznej 
+5. Zresetowa ć zdalny sterownik, aby móc go u żywa ć w ogólnym 
+trybie pracy. 
+ 
+ Sprawdzenie adresu jednostek wewn ętrznych: 
+1 Trzymaj ąc wci śni ęty przycisk PLASMA nacisn ąć  przycisk Reset.  
+ 
+2 Kieruj ąc sterownik w stron ę jednostki wewn ętrznej nacisn ąć  1 raz przycisk 
+ON/OFF. Na jednostce wewn ętrznej zostanie wy świetlony ustawiony adres.  
+Czas i sposób wy świetlania adresu mo że ró żni ć si ę w zale żno ści 
+od typu jednostki wewn ętrznej. 
+3 Zresetowa ć zdalny sterownik, aby móc go u żywa ć w ogólnym trybie pracy.  
+ 
+ UWAGI DO ADRESOWANIA JEDNOSTEK: 
+• Bramka sortuje jednostki wewn ętrzne w kolejno ści rosn ącej. 
+Np. Je śli adresami jednostek wewn ętrznych s ą "7C", "7D", "7E" i "7F", kolejno ść  jednostek  
+wewn ętrznych w ACMC jest nast ępuj ąca: 1.: "7C", 2.: "7D", 3.: "7E" i 4.: "7F". 
+ 
+ 
+ 
+ 
+
+
+----PAGE----
+
+Konfiguracja  bramki  
+14    Bramka komunikacyjna (ACMC)  
+Konfiguracja  bramki 
+ 
+Konfiguracj ę nale ży wykona ć przy instalacji. Poprawnie wykonana konfiguracja jest procesem jedno- 
+razowym. 
+ 
+ Ustawienia domy ślne 
+Adres IP  192.168.1.100  
+Port konfiguracji www  80  
+Port komunikacyjny  502  
+Nazwa użytkownika  admin  
+Hasło  admin  
+ 
+ UWAGA 
+Ustawienia fabryczne mo żna w ka żdej chwili przywróci ć przez wci śni ęcie i przytrzymanie przez ponad 
+10 sekund przycisku znajduj ącego si ę na dolnej płytce urz ądzenia.  
+Załadowanie ustawie ń domy ślnych zostanie potwierdzone przez jednoczesne migot anie diod Act [10] 
+oraz ERR [9]. 
+ 
+ 
+ 
+ Konfiguracja 
+ 
+Aby skonfigurowa ć urz ądzenie nale ży podł ączy ć je do lokalnej sieci komputerowej lub bezpo średnio 
+do komputera osobistego. 
+ 
+A. Konfiguracja w sieci lokalnej.  
+ 
+ UWAGA 
+Opcja mo żliwa tylko gdy sie ć, do której podł ączamy urz ądzenie ma ustawione adresy IP  
+w formacie: 192.168.1.***.  
+Je śli tak nie jest, nale ży skorzysta ć z drugiej metody konfiguracji. 
+ 
+ 
+Opis czynno ści: 
+1. zasili ć urz ądzenie; diody „PWR” [6] powinny si ę za świeci ć; 
+2. podł ączyć urz ądzenie do sieci lokalnej; dioda „Act” [10] powinna zacz ąć  sygnalizowa ć pod- 
+łączenie do sieci; 
+3. uruchomi ć przegl ądark ę www na komputerze; w polu adresu nale ży wpisa ć: 
+„http://192.168.1.100” (dla domy ślnych ustawie ń urz ądzenia) i zatwierdzi ć adres; pojawi si ę 
+strona logowania; 
+4. wpisa ć dane do logowania (User Name: „admin”, Password: „ admin” – dla ustawie ń do- 
+my ślnych) i klikn ąć  przycisk „Login”; po poprawnym logowaniu pojawi si ę okno ustawie ń 
+głównych), widok okna znajduje si ę poni żej; 
+ 
+
+----PAGE----
+
+Konfiguracja  bramki  
+Instrukcja instalacji   15 
+ 
+ 
+5. wyedytowa ć ustawienia urz ądzenia 
+Pole  Opcje  Opis  
+MAC Address  
+(nieedytowalny) 
+- adres fizyczny urz ądzenia 
+IP Address  format: ***.***.***.*** adres urz ądzenia w sieci lokalnej 
+Port  format: ***** port komunikacyjny urz ądzenia 
+Network Mask  format: ***.***.***.*** maska adresu urz ądzenia 
+Gateway  format: ***.***.***.*** brama sieciowa dla urz ądzenia 
+Connection Timeout  0 – wył ączone 
+0,5 ÷ 32767,5 sek. 
+czas, po którym urz ądzenie automa- 
+tycznie zamknie aktywne poł ączenie; 
+zliczany od chwili ostatniej transmisji 
+ 
+ 
+ 
+ 
+ 
+
+
+----PAGE----
+
+Konfiguracja  bramki  
+16    Bramka komunikacyjna (ACMC)  
+6. zatwierdzi ć zmiany w konfiguracji ogólnej –wcisn ąć  przycisk „Save”; wy świetli si ę okno z 
+potwierdzeniem zapisu – przykład poni żej; 
+ 
+ 
+ 
+ 
+7. zresetowa ć urz ądzenie – wcisn ąć  przycisk „Reboot”; wy świetli si ę okno potwierdzaj ące re- 
+set; po około 15 sekundach mo żna wcisn ąć  przycisk „Refresh”, który pozwoli na ponowne 
+zalogowanie i weryfikacj ę ustawie ń. 
+ 
+ UWAGA 
+Zmiana ustawie ń urz ądzenia zostaje wprowadzona dopiero po ponownym uruchomieniu urz ądzenia ! 
+ 
+ 
+ 
+ 
+8. (opcjonalne – tylko dla SYNG-1030-HA) skonfiguro wa ć aktualn ą dat ę, czas  i dzie ń tygo- 
+dnia. Po klikni ęciu przycisku „Set date and time” pojawi si ę nowe okno z ustawieniami. Na- 
+le ży wprowadzi ć poprawne dane i potwierdzi ć prze klikni ęcie „Save”. 
+ 
+
+
+----PAGE----
+
+Konfiguracja  bramki  
+Instrukcja instalacji   17 
+ 
+ 
+ 
+ 
+9. uruchomi ć wyszukiwanie klimatyzatorów podł ączonych do magistrali LG 
+Po zmianie parametrów sieciowych urz ądzenia i ich zastosowaniu (restarcie urz ądzenia), 
+mo żna wykona ć skanowanie magistrali LG.  
+Wci śni ęcie przycisku „Scan AC Units” spowoduje przej ście urz ądzenia w tryb wyszukiwa- 
+nia urz ądze ń. Rozpocz ęcie procesu zostanie potwierdzone komunikatem. 
+Bardzo wa żne jest aby nie zamyka ć strony konfiguracyjnej urz ądzenia, do momentu 
+ponownego załadowania si ę głównej strony konfiguracyjnej  (nast ępuje ono automa- 
+tycznie). 
+Po przeładowaniu strony, mo żna si ę wylogowa ć i zamkn ąć  okno przegl ądarki. Proces wy- 
+szukiwania pozostanie nieprzerwany.  
+Zako ńczenie procesu wyszukiwania widoczne jest w rejestr ze statusu urz ądzenia 
+(Modbus), którego opis znajduje si ę w rozdziale „Funkcje Modbus”**. 
+ 
+ 
+ 
+ 
+
+
+----PAGE----
+
+Konfiguracja  bramki  
+18    Bramka komunikacyjna (ACMC)  
+B. Konfiguracja przy bezpo średnim podł ączeniu do komputera osobistego. 
+ 
+Opis czynno ści: 
+1.  zasili ć urz ądzenie; diody „PWR” [4] powinny si ę za świeci ć; 
+2.  podł ączyć urz ądzenie do portu sieciowego komputera osobistego; di oda „Act” [10] 
+powinna zacz ąć  sygnalizowa ć podł ączenie do sieci; 
+3.  ustawi ć kart ę sieciow ą komputera tak, aby oba urz ądzenia znajdowały si ę w tej samej 
+sieci; przykładowa konfiguracja dla karty sieciowej  skonfigurowanej pod systemem 
+operacyjnym Microsoft Windows 7 przedstawiona jest na rysunku poni żej; opcje konfi- 
+guracyjne w systemie Windows 7 mo żna znale źć  w „Panelu sterowania”: Panel stero- 
+wania\Sie ć i Internet\Poł ączenia sieciowe -> wła ściwo ści karty sieciowej, do której 
+podł ączone jest urz ądzenie; 
+ 
+ 
+ 
+4.  post ępowa ć zgodnie z instrukcjami zawartymi w podpunkcie „a”, od punktu 3 wł ącz- 
+nie; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+----PAGE----
+
+Aplikacja AC Mobile Control*  
+Instrukcja instalacji   19 
+Aplikacja AC Mobile Control* 
+ 
+Aplikacja słu ży do sterowania domowego systemu klimatyzacji za po średnictwem bramki AC Mobile 
+Control. Mo żna j ą pobra ć za darmo ze sklepu Google Play. 
+ 
+   
+ 
+Ekran główny 
+ 
+Przegl ąd klimatyzatorów 
+ 
+Ekran  
+sterowania klimatyzatorem 
+ 
+   
+ 
+Ekran  
+pomocy ogólnej 
+ 
+Ekran  
+ustawiania harmonogramów 
+ 
+Ekran  
+pomocy ustawie ń Aplikacji 
+ 
+ 
+ 
+Informacje dotycz ące obsługi aplikacji znajduj ą si ę w ekranach pomocy aplikacji – ikonka  
+
+
+----PAGE----
+
+Integracja z BMS**  
+20    Bramka komunikacyjna (ACMC)  
+Integracja z BMS** 
+ 
+Integracja z systemami BMS odbywa si ę za po średnictwem interfejsu Modbus TCP. 
+ 
+ 
+ Funkcje Modbus 
+ 
+Poniewa ż urz ądzenie posiada port komunikacyjny ModbusTCP, nie ma  potrzeby jego adresowania. 
+Urz ądzenie odpowie na zapytanie Modbus niezale żnie od podanego adresu docelowego. Jednak 
+zgodnie ze specyfikacj ą, powinien by ć w takim przypadku stosowany adres „0xFF”. 
+ 
+Funkcja odczytu - Read Input Registers (0x04)  
+Dla tej funkcji urz ądzenie udost ępnia 1751 rejestrów. Pozwalaj ą one odczyta ć informacje dotycz ące 
+poszczególnych jednostek podł ączonych do bramki (rejestry 1 – 1750) oraz jej status (rejestr 0). 
+ 
+Struktura rejestru statusu ogólnego urz ądzenia (adres 0): 
+Bł ąd Flagi statusu 
+kod bł ędu (0x00 – 0xFF)  - SCN - - BSY - - RDY  
+ 
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 
+Numery bitów rejestru 
+ 
+Znaczenie flag statusu: 
+Bit  Opis  Znaczenie, gdy „1”  Znaczenie, gdy „0”  
+SCN  (SCAN)  
+skanowanie magistrali LG 
+ 
+skanowanie w toku normalna praca 
+BSY  (BUSY) 
+urz ądzenie zaj ęte 
+urz ądzenie jest w trakcie dokonywania 
+zmian  
+w ustawieniach jednostki; 
+sytuacja wyst ępuje po zapisie nowych 
+ustawie ń jednostki w rejestrach 
+Modbus 
+ 
+normalna praca 
+RDY  (READY) 
+urz ądzenie gotowe do przy- 
+jęcia komendy 
+urz ądzenie jest gotowe do zmiany 
+ustawie ń jednostki (gotowo ść  do ode- 
+brania zapisu Modbus) 
+urz ądzenie jest nie- 
+gotowe do zapisu 
+rejestrów Modbus 
+ 
+ 
+Kody bł ędów: 
+Kod  Nazwa  Opis  
+0x00  BRAK_BŁ ĘDU urz ądzenie pracuje normalnie 
+0x01  BŁ ĄD_CRC_LG urz ądzenie wykryło bł ąd sumy kontrolnej w od- 
+pwiedzi jednostki LG 
+0x02  BRAK_ODPOWIEDZI_LG odpytywana/ustawiana jednostka nie odpowie- 
+działa 
+0x03  ZŁA_TMP_ZADANA temperatura zadana (zapisana przez M odbus) 
+jest poza dozwolonym zakresem 
+0x04  ZŁA_TMP_ZMIERZONA temperatura zmierzona (zwrócona przez jed- 
+
+----PAGE----
+
+Integracja z BMS**  
+Instrukcja instalacji   21 
+nostk ę) jest poza dozwolonym zakresem 
+0x06  ZŁY_PARAMETR_FAN ustawienie intensywno ści nawiewu jest poza 
+zakresem 
+0x07  ZŁY_PARAMETR_MODE ustawienie trybu pracy jest poza zakresem 
+ 
+ 
+Ka żda z wyszukanych przez bramk ę jednostek zajmuje przestrze ń 7 rejestrów Modbus. Ustawienia 
+urz ądze ń s ą posortowane adresami jednostek (od najmniejszego do najwi ększego dla grup i jedno- 
+stek) i s ą umieszczone bezpo średnio po sobie. 
+ 
+ 
+Struktura rejestrów statusu jednostki (adresy 1 ÷ 1750): 
+NR 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 
+1      AC(1) VENT(1)  GN(1)  UN(1) 
+2         FS(1) 
+3         MD (1) 
+4         ST(1) 
+5    FA(1)   PF(1)   PL(1)   AS(1)   ON(1) 
+6         AT(1) 
+7         ER (1) 
+ 
+Przedstawione numery rejestrów dotycz ą pierwszej jednostki (rejestry 1 ÷ 7). 
+Dotyczy AC 
+Dotyczy VENT 
+DOTYCZY AC i VENT 
+BEZ ZNACZENIA 
+ 
+Znaczenie flag statusu: 
+Bit  Opis  Opcje/znaczenie  
+AC  flaga typu jednostki  
+(klimatyzacja) 
+1 bit 
+gdy „1” – jednostka jest klimatyzatorem 
+gdy „0” – jednostka nie jest klimatyzatorem 
+VENT  flaga typu jednostki  
+(wentylacja) 
+1 bit 
+gdy „1” – jednostka wentylacyjna 
+gdy „0” – nie jednostka wentylacyjna 
+ 
+GN  (Group Number) 
+adres grupy urz ądzenia 
+starsza cz ęść  młodszego bajtu (4 bity) 
+numer grupy; stanowi cz ęść  identyfikatora 
+(adresu) jednostki; konfigurowany w jedno- 
+stce;  
+zakres: 0x0 ÷ 0xF 
+ 
+UN  (Unit Number) 
+adres urz ądzenia 
+młodsza cz ęść  młodszego bajtu (4 bity) 
+numer jednostki (w grupie); stanowi cz ęść  
+identyfikatora (adresu) jednostki; konfigu- 
+rowany w jednostce;  
+zakres: 0x0 ÷ 0xF 
+ 
+FS  (Fan Speed) 
+intensywno ść  nawiewu 
+młodszy bajt rejestru (8 bitów) 
+gdy „0” – AUTO (intensywno ść  regulowana 
+przez automatyk ę jednostki) 
+gdy „1” – VERY LOW (bardzo mała inten- 
+sywno ść )* 
+gdy „2” – LOW (mała intensywno ść ) 
+gdy „3” – MIDDLE ( średnia intensywno ść ) 
+
+----PAGE----
+
+Integracja z BMS**  
+22    Bramka komunikacyjna (ACMC)  
+gdy „4” – HIGH (du ża intensywno ść ) 
+gdy „5” – VERY HIGH (bardzo du ża inten- 
+sywno ść )* 
+ 
+MD  (Mode) 
+tryb pracy 
+młodszy bajt rejestru (8 bitów) 
+gdy „0” – AUTO (tryb wybierany przez au- 
+tomatyk ę jednostki) 
+gdy „1” – COOLING (chłodzenie) 
+gdy „2” – FAN (nawiew) 
+gdy „3” – HEAT (ogrzewanie) *** 
+gdy „4” – DRY (osuszanie)*** 
+ 
+ST  (Set Temperature) 
+temperatura zadana 
+młodszy bajt rejestru (8 bitów) 
+temperatura (w ⁰C), która ma by ć utrzymy- 
+wana  
+w strefie działania jednostki; zakres: 18 ÷ 
+30 
+ 
+FA  (Filter Alert) 
+flaga brudnego filtru 
+TYLKO DLA JEDNOSTEK 
+WENTYLACYJNYCH 
+ 
+1 bit 
+gdy „1” – filtr jest brudny 
+gdy „0” – normalna praca 
+ 
+PF  (Plasma Function) 
+funkcja „Plasma” 
+1 bit 
+gdy „1” – funkcja wł ączona 
+gdy „0” – normalna praca 
+ 
+PL  (Panel Lock) 
+blokada sterowania lokalnego 
+1 bit 
+gdy „1” – funkcja wł ączona 
+gdy „0” – normalna praca 
+ 
+AS  (Auto Swing) 
+tryb wywiewu 
+1 bit 
+gdy „1” – nawiew z dodatkowym rozprowa- 
+dzaniem powietrza 
+gdy „0” – nawiew standardowy 
+ 
+ON  Wł ączenie/wył ączenie jednostki 1 bit 
+gdy „1” – jednostka wł ączona 
+gdy „0” – jednostka wył ączona 
+ 
+AT  (Actual Temperature) 
+temperatura zmierzona przez jednostk ę 
+młodszy bajt rejestru (8 bitów) 
+temperatura (w ⁰C), która została zmierzo- 
+na przez jednostk ę w strefie jej działania; 
+zakres: 10 ÷ 40 
+ 
+ER  (Error) 
+kod bł ędu jednostki 
+młodszy bajt rejestru (8 bitów) 
+kod bł ędu zwrócony przez jednostk ę 
+ 
+ 
+ 
+*** opcje dost ępne tylko dla niektórych modeli jednostek (informacje o kompatybilno ści znajduj ą si ę w 
+dokumentacji konkretnej jednostki) 
+ 
+ 
+
+----PAGE----
+
+Integracja z BMS**  
+Instrukcja instalacji   23 
+ 
+Funkcja zapisu – Write Multiple Registers (0x10)  
+Dla tej funkcji urz ądzenie udost ępnia 1750 rejestrów. Pozwalaj ą one zmieni ć parametry pracy po- 
+szczególnych jednostek podł ączonych do bramki. 
+ 
+Struktura rejestrów statusu jednostki (adresy 1 ÷ 1750): 
+NR  15  14  13  12  11  10  9 8 7 6 5 4 3 2 1 0 
+1 ZAREZERWOWANE 
+2         FS(1) 
+3         MD (1) 
+4         ST(1) 
+5       PF(1)   PL(1)   AS(1)   ON(1) 
+6 ZAREZERWOWANE 
+7 ZAREZERWOWANE 
+ 
+Przedstawione numery rejestrów dotycz ą pierwszej jednostki (rejestry 1 ÷ 7). 
+Dotyczy AC 
+Dotyczy VENT 
+DOTYCZY AC i VENT 
+BEZ ZNACZENIA 
+ 
+Znaczenie poszczególnych pozycji jest identyczne z opisem dla rejestrów odczytywanych. Rejestry 
+zawieraj ące adres i typ urz ądzenia, temperatur ę aktualn ą i kod bł ędu s ą rejestrami tylko do odczytu. 
+Nie s ą wi ęc dost ępne przy wykorzystaniu funkcji „Write Multiple Registers”. 
+ 
+ 
+ 
+ UWAGA 
+• Nie nale ży dokonywa ć jednoczesnego zapisu rejestrów dla wi ęcej ni ż jednej jednostki.  
+• Przed rozpocz ęciem zapisu rejestrów Modbus, nale ży bezwzgl ędnie sprawdzi ć flag ę goto- 
+wo ści urz ądzenia (patrz: rejestr statusu ogólnego).  
+• Ka żdy zapis parametrów jednostki powinien zawiera ć pełny zestaw jej parametrów.  
+ 
+
+----PAGE----
+
+Szkielet mapy rejestrów Modbus**  
+24    Bramka komunikacyjna (ACMC)  
+Szkielet mapy rejestrów Modbus** 
+ 
+ 
+Poni ższa tabela przedstawia podział rejestrów Modbus w urz ądzeniu. 
+Znaczenia poszczególnych bitów zostały opisane w poprzednich sekcjach. 
+ 
+
+
+----PAGE----
+
+Notatki  
+ 
+Instrukcja instalacji   25 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+----PAGE----
+
+Notatki  
+ 
+26    Bramka komunikacyjna (ACMC)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+----PAGE----
+
+Notatki  
+ 
+Instrukcja instalacji   27 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+----PAGE----
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+Infigate Technology Sp. z o.o.  
+Wałbrzyska 11/85  
+02-739 Warszawa, Polska 
+ 
+zamówienia : shop@infigate.com 
+pomoc techniczna : support@infigate.com 
+ 
+ 
+www.infigate.com 
+  
