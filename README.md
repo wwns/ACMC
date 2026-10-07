@@ -132,6 +132,10 @@ Ten projekt jest udostępniany jako narzędzie lokalne i eksperymentalne. Przed 
 
 - [Releases](https://github.com/wwns/ACMC/releases)
 
+## Screenshot
+
+![ACMC GUI](https://raw.githubusercontent.com/wwns/ACMC/main/screenshot.png)
+
 ## Status
 
 - Repozytorium: GitHub
