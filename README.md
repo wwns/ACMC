@@ -131,7 +131,6 @@ Ten projekt jest udostępniany jako narzędzie lokalne i eksperymentalne. Przed 
 ## Linki
 
 - [Releases](https://github.com/wwns/ACMC/releases)
-- [Packages](https://github.com/users/wwns/packages?repo_name=ACMC)
 
 ## Status
 
