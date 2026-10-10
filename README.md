@@ -126,7 +126,9 @@ Projekt jest aktywnie rozwijany jako narzędzie pomocnicze do pracy z urządzeni
 
 ## Licencja
 
-Ten projekt jest udostępniany jako narzędzie lokalne i eksperymentalne. Przed publicznym wdrożeniem w środowisku produkcyjnym zaleca się sprawdzenie zgodności z politykami bezpieczeństwa, dokumentacją sprzętu oraz procedurami instalacji.
+Projekt jest udostępniany na licencji MIT. Pełny tekst licencji znajduje się w pliku [LICENSE](LICENSE).
+
+Projekt ma charakter narzędzia lokalnego i eksperymentalnego. Przed publicznym wdrożeniem w środowisku produkcyjnym zaleca się sprawdzenie zgodności z politykami bezpieczeństwa, dokumentacją sprzętu oraz procedurami instalacji.
 
 ## Linki
 
